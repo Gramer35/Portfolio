@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS';
+    background-color: #575959;
+    color: #51d6d6;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 50px;
+}
