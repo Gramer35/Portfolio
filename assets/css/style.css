@@ -66,6 +66,24 @@ a {
     background-color: #51d6d6;
 }
 
+.about {
+    display: flex;
+    font-family: 'Trebuchet MS';
+}
+
+.about h3 {
+    margin-left: 20px;
+    padding-right: 10px;
+    text-align:end;
+    font-size: 75px;
+    border-right: 3px solid;
+    border-color: black;
+}
+
+.about h4, h5{
+    font-size: 12px;
+    margin-left: 20px;
+}
 
 
 @media screen and (max-width: 800px) {
