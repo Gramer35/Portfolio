@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+:root{
+    
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -44,14 +48,24 @@ a {
     border-bottom: 3px solid;
 }
 
-/* .stock {
-    height: 800px;
+.stock {
+    display: flex;
+    height: 700px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-image: url("../images/stock.jpg");
     background-size: cover;
     background-position: center;
-} */
+}
+
+.stock h2 {
+    margin: auto 50px 15px auto;
+    padding: 5px 5px 5px 5px;
+    font-size: 45px;
+    color: #575959;
+    background-color: #51d6d6;
+}
+
 
 
 @media screen and (max-width: 800px) {
