@@ -114,20 +114,26 @@ p {
 .work {
     display: flex;
     flex-wrap: wrap;
-    /* border-style: solid;
-    border-width: 3px;
-    border-color: var(--main-blue); */
+    position: relative;
+    text-align: center;
+    color:black;
     padding: 10px;
-    flex: 0 0 400px;
+    /* flex: 0 0 400px; */
 }
 
 .work img {
     border-style: solid;
     border-width: 4px;
     border-color: var(--main-blue);
-    /* max-height: 300px;
-    max-width: 300px; */
+    height: 200px;
+    width: 200px;
 
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
 }
 
 
