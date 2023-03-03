@@ -5,7 +5,9 @@
 }
 
 :root{
-    
+    --main-blue: #51d6d6;
+    --content-blue: #327a96;
+
 }
 
 .header {
@@ -14,7 +16,7 @@
     padding: 10px 10px 10px 0px;
     font-family: 'Trebuchet MS';
     background-color: #575959;
-    color: #51d6d6;
+    color: var(--main-blue);
 }
 
 .header h1 { 
@@ -22,7 +24,7 @@
     display: inline-block;
     font-size: 45px;
     color: #575959;
-    background-color: #51d6d6;
+    background-color: var(--main-blue);
 }
 
 .header nav {
@@ -41,7 +43,7 @@
 }
 
 a {
-    color: #51d6d6;
+    color: var(--main-blue);
     text-decoration: none;
     padding: 0px 7px;
     border-bottom: 3px solid;
@@ -67,22 +69,24 @@ p {
     padding: 5px 5px 5px 5px;
     font-size: 45px;
     color: #575959;
-    background-color: #51d6d6;
+    background-color: var(--main-blue);
 }
 
 .content {
     display: flex;
+    flex-grow: 1;
     font-family: 'Trebuchet MS';
 }
 
 .content h3 {
-    /* margin: auto; */
+    flex: 0 0 25%;
     margin-bottom: 30px;
     padding-right: 10px;
     text-align:end;
     font-size: 55px;
     border-right: 3px solid;
     border-color: black;
+    color: var(--content-blue);
 }
 
 .content h4 {
@@ -93,6 +97,8 @@ p {
 
 .content nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 15px;
     margin-right: 20px;
     text-align: center;
@@ -102,10 +108,11 @@ p {
 
 .content nav ul li {
     display: inline-flex;
-    /* margin: 0px 10px; */
+    /* justify-content: flex-end;
+    align-items: center; */
+    margin: 0px 10px;
 }
 
-.content work
 
 
 @media screen and (max-width: 800px) {
@@ -120,7 +127,7 @@ p {
         display: inline-block;
         font-size: 45px;
         color: #575959;
-        background-color: #51d6d6;
+        background-color: var(--main-blue);
     }
 
     nav {
