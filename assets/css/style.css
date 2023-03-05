@@ -139,6 +139,11 @@ p {
     font-size: 10px;
 }
 
+.work-item a {
+    border-bottom: none;
+    padding: none;
+}
+
 .work img {
     border-style: solid;
     border-width: 4px;
@@ -154,7 +159,7 @@ p {
 
 .footer {
     display: flex;
-    justify-self: center;
+    justify-content: center;
     flex-wrap: wrap;
     text-align: center;
     font-family: 'Trebuchet MS';
