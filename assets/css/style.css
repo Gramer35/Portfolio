@@ -120,6 +120,8 @@ p {
     margin: 10px;
     flex: 0 0 35%;
     filter: brightness(50%);
+    min-width: 350px;
+    min-height: 350px;
 }
 
 .work-item h4 {
@@ -130,6 +132,7 @@ p {
     left: 0;
     background-color: #51d6d6;
     filter: brightness(100%);
+    background-size: 350px;
 }
 
 .work-item h5 {
@@ -139,7 +142,19 @@ p {
     font-size: 10px;
 }
 
-.work-item a {
+.surf {
+    display: flex;
+    background-image: url("../images/surf.jpg");
+    background-size: cover;
+    background-position: center;
+    border-style: solid;
+    border-width: 4px;
+    border-color: var(--main-blue);
+    height: 350px;
+    width: 100%;
+}
+
+.work a {
     border-bottom: none;
     padding: none;
 }
