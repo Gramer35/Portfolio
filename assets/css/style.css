@@ -4,21 +4,22 @@
     margin: 0;
 }
 
+/* repeating colors - no need to keep typing the code */
 :root{
     --main-blue: #51d6d6;
     --content-blue: #327a96;
-
 }
 
+/* top of the page content - centers text with padding to extend the background color */
 .header {
     display: flex;
     justify-content: space-between;
     padding: 10px 10px 10px 0px;
     font-family: 'Trebuchet MS';
     background-color: #575959;
-    color: var(--main-blue);
 }
 
+/* text for the top left */
 .header h1 { 
     padding: 5px 5px 5px 100px;
     display: inline-block;
@@ -27,15 +28,16 @@
     background-color: var(--main-blue);
 }
 
+/* text for the links on the top right */
 .header nav {
     display: flex;
     padding: 15px;
     margin-right: 20px;
-    /* margin-left: auto; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
+/* keeping the nav links in line vs a column as a list */
 .header nav ul li {
     display: inline-flex;
     margin: 0px 10px;
@@ -53,6 +55,7 @@ p {
     font-size: 110%
 }
 
+/* background photo below header */
 .stock {
     display: flex;
     height: 600px;
@@ -63,6 +66,7 @@ p {
     background-position: center;
 }
 
+/* text on the bottom right of stock photo */
 .stock h2 {
     margin: auto 50px 15px auto;
     padding: 5px 5px 5px 5px;
@@ -71,12 +75,14 @@ p {
     background-color: var(--main-blue);
 }
 
+/* parent for major sections */
 .content {
     display: flex;
     justify-content: flex-start;
     font-family: 'Trebuchet MS';
 }
 
+/* text for the section headers(on the side) */
 .content h3 {
     flex: 0 0 20%;
     margin: 15px 0px;
@@ -93,7 +99,6 @@ p {
     justify-self: center;
     align-self: center;
     padding: 15px;
-    /* margin-right: 20px; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
@@ -103,6 +108,7 @@ p {
     margin: 0px 10px;
 }
 
+/* subclass of content for the clients work */
 .work {
     display: flex;
     justify-content: center;
@@ -114,6 +120,7 @@ p {
     padding: 10px 10px;
 }
 
+/* each individual item described for work */
 .work-item {
     display: flex;
     position: relative;
@@ -123,6 +130,7 @@ p {
     min-height: 350px;
 }
 
+/* text within work item */
 .work-item h4 {
     position: absolute;
     font-size: 30px;
@@ -132,6 +140,7 @@ p {
     background-color: #51d6d6;
 }
 
+/* subtext under the h4 */
 .work-item h5 {
     position: absolute;
     bottom: 20px;
@@ -139,6 +148,8 @@ p {
     font-size: 10px;
 }
 
+/* SURF, LED, CALC, PASTEL, and RUN are each section of work that is submitted and
+each have their own image */
 .surf {
     display: flex;
     flex: 1 1 75%;
@@ -155,7 +166,6 @@ p {
 }
 
 .led {
-    /* display: flex; */
     flex: 1 1 ;
     background-color: rgba(255, 255, 255, 0.563);
     background-blend-mode: lighten;
@@ -165,7 +175,6 @@ p {
     border-style: solid;
     border-width: 4px;
     border-color: var(--main-blue);
-    /* max-height: 100px; */
     min-width: 45%;
 }
 
@@ -180,7 +189,6 @@ p {
     border-style: solid;
     border-width: 4px;
     border-color: var(--main-blue);
-    /* height: 350px; */
     min-width: 45%;
 }
 
@@ -195,7 +203,6 @@ p {
     border-style: solid;
     border-width: 4px;
     border-color: var(--main-blue);
-    /* height: 350px; */
     min-width: 45%;
 }
 
@@ -210,7 +217,6 @@ p {
     border-style: solid;
     border-width: 4px;
     border-color: var(--main-blue);
-    /* max-height: 100px; */
     min-width: 45%;
 }
 
@@ -219,10 +225,12 @@ p {
     padding: 0;
 }
 
+/* when you hover, the section with highlight itself */
 .work-item:hover {
     background-blend-mode: normal;
 }
 
+/* bottom section of the page */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -232,6 +240,7 @@ p {
     font-family: 'Trebuchet MS';
 }
 
+/* text for the bottom section */
 .footer h3 {
     flex: 0 0 20%;
     padding-right: 10px;
@@ -253,7 +262,8 @@ p {
     display: inline-flex;
 }
 
-
+/* when the page is lowered below 800px, the page with reformat to fit the page via specific
+entry */
 @media screen and (max-width: 800px) {
     .header{
         padding: 10px 0px;
@@ -298,12 +308,3 @@ p {
     }
 }
 
-
-/* Need help with:
-1. Getting the first, surf, image to be bigger than the rest. nth-child didn't seem to work
-
-2. why isn't flex grow/shrink working on the images
-
-3. footer section: trying to get the links to be positioned in the middle
-
-*/
